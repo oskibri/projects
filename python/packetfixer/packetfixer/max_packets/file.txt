@@ -1,0 +1,10 @@
+1
+2
+3
+INSERT
+something1
+something2
+);
+8
+9
+

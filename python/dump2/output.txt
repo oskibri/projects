@@ -1,0 +1,3402 @@
+-- Server version:	11.5.2-MariaDB
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `oskar`
+
+DROP TABLE IF EXISTS `oskar`;
+CREATE TABLE `oskar` (
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `oskar`
+
+LOCK TABLES `oskar` WRITE;
+ALTER TABLE `oskar` DISABLE KEYS;
+ALTER TABLE `oskar` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `simple`
+
+DROP TABLE IF EXISTS `simple`;
+CREATE TABLE `simple` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL DEFAULT 'snibri',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `simple`
+
+LOCK TABLES `simple` WRITE;
+ALTER TABLE `simple` DISABLE KEYS;
+INSERT INTO `simple` VALUES
+(49,'Snibri',99,NULL,'snibri'),
+(50,'Bennis',34,NULL,'snibri'),
+(51,'Oskibri',30,NULL,'snibri'),
+(61,'gibbgibb',99,NULL,'snibri'),
+(62,'subsni',99,NULL,'snibri'),
+(63,'happy',99,NULL,'snibri'),
+(64,'sepsni',99,NULL,'snibri'),
+(65,'gabb',99,NULL,'snibri'),
+(66,'gbb',99,NULL,'brebbi');
+ALTER TABLE `simple` ENABLE KEYS;
+UNLOCK TABLES;
+
+-- Table structure: `users`
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Table dump: `users`
+
+LOCK TABLES `users` WRITE;
+ALTER TABLE `users` DISABLE KEYS;
+INSERT INTO `users` VALUES
+(1,'oskar',30,NULL,'2024-11-07 23:59:56'),
+(2,'benedicte',34,NULL,'2024-11-08 01:27:56');
+ALTER TABLE `users` ENABLE KEYS;
+UNLOCK TABLES;
+
