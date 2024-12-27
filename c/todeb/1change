@@ -1,0 +1,3 @@
+### Thu 05 Sep Oskar VH <oskar@servebolt.com> - `v1.3.0`
+  - Added -v|--version flag to print version number
+  - Changed date to ISO 8601 format

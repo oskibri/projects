@@ -1,0 +1,40 @@
+\doxysection{helper.\+h File Reference}
+\hypertarget{helper_8h}{}\label{helper_8h}\index{helper.h@{helper.h}}
+
+
+Provides helper functions for ncurses.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{helper_8h_a00ab255cff0316f0a993e604dadd1ca8}{inside\+\_\+box}} (WINDOW \texorpdfstring{$\ast$}{*}box, MEVENT mevent)
+\begin{DoxyCompactList}\small\item\em Checks if a mouse event occured inside a window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides helper functions for ncurses. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{helper_8h_a00ab255cff0316f0a993e604dadd1ca8}\index{helper.h@{helper.h}!inside\_box@{inside\_box}}
+\index{inside\_box@{inside\_box}!helper.h@{helper.h}}
+\doxysubsubsection{\texorpdfstring{inside\_box()}{inside\_box()}}
+{\footnotesize\ttfamily \label{helper_8h_a00ab255cff0316f0a993e604dadd1ca8} 
+int inside\+\_\+box (\begin{DoxyParamCaption}\item[{WINDOW \texorpdfstring{$\ast$}{*}}]{box}{, }\item[{MEVENT}]{mevent}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a mouse event occured inside a window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & The window to check \\
+\hline
+{\em mevent} & The mouse event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the event occured inside the window, 0 otherwise 
+\end{DoxyReturn}

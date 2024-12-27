@@ -1,0 +1,33 @@
+#!/usr/bin/env lua
+
+if #arg < 2 then
+	print(string.format("Usage: %s <bin>", arg[0]))
+end
+
+if arg[2] == "clean" then
+	os.remove(arg[1])
+	os.remove(arg[1] .. ".c")
+	os.remove("makefile")
+	os.remove("compile_commands.json")
+end
+
+local bin = io.open(arg[1] .. ".c", "w")
+if bin then
+	bin:write("#include <stdlib.h>")
+	bin:write("#include <stdio.h>")
+	bin:write("#include <string.h>")
+	bin:write("#include <unistd.h>\n")
+	bin:write("int main(void) {\n\nreturn exit_success;\n}")
+	bin:close()
+end
+
+local makefile = io.open("makefile", "w")
+if makefile then
+	makefile:write("cc=clang\n")
+	makefile:write("all: " .. arg[1])
+	makefile:write("\n%: %.c")
+	makefile:write("\t$(cc) -o $@ $^")
+	makefile:close()
+end
+
+os.execute("bear -- make")

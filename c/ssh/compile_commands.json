@@ -1,0 +1,14 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-o",
+      "run",
+      "run.c"
+    ],
+    "directory": "/home/oskar/projects/c/ssh",
+    "file": "/home/oskar/projects/c/ssh/run.c",
+    "output": "/home/oskar/projects/c/ssh/run"
+  }
+]

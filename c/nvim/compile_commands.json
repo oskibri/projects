@@ -1,0 +1,14 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-o",
+      "test",
+      "test.c"
+    ],
+    "directory": "/home/oskar/projects/c/nvim",
+    "file": "/home/oskar/projects/c/nvim/test.c",
+    "output": "/home/oskar/projects/c/nvim/test"
+  }
+]
